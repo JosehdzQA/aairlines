@@ -8,6 +8,7 @@ import pages.FlightStatusPage;
 
 public class FlightStatusTests {
     private WebDriver driver;
+    String expectedResult = "flight status Succesful"; ////"put data right"
     FlightStatusPage flightStatusPage;
 
     @BeforeTest
@@ -21,7 +22,9 @@ public class FlightStatusTests {
     @Test
     public void testFlightStatus() throws InterruptedException {
         flightStatusPage.flightPageSearch();
-        //verification required work for assert
+        String actualResult = driver.findElement(By.xpath("/html/body/div/p[3]")).getText();
+        //verification required work for assert and the correct web element
+        Assert.assertEquals(actualResult,expectedResult);
     }
 
     @AfterTest
