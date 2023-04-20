@@ -9,6 +9,7 @@ import pages.BookPage;
 public class BookingsTests {
 
     private WebDriver driver;
+    String expectedResult = "Search Booking Succesful"; ////"put data right"
     BookPage bookPage;
 
     @BeforeTest
@@ -22,7 +23,9 @@ public class BookingsTests {
     @Test
     public void testSearchBook(){
         bookPage.SearchBooking();
-
+        String actualResult = driver.findElement(By.xpath("/html/body/div/p[3]")).getText();
+        //requires work on assert succes or failed, the page required permission
+        Assert.assertEquals(actualResult,expectedResult);
     }
 
     @AfterTest
