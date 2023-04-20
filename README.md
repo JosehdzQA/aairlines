@@ -3,8 +3,10 @@ code challenge QA American Airlines
 ZoomCare Candidate Code Challenge - QA / Automation
 Devise a Test case & Scenario.
 
-1 Validate search of travel succesful on Book Tab 
+1 Validate search of travel succesful on Book Tab
+
 2 Validate search of travel succesful on Checkin Tab 
+
 3 Validate search of travel succesful on flight status 
 4 Validate successful login 5 Validate enroll / join succes 
 6 Validate flow join for free link 7 Make a book of flight, one way, lowest fare, 1 passenger 8 Make a book of flight, round trip, lowest fare, 1 passenger 
