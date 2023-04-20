@@ -43,7 +43,9 @@ Devise a Test case & Scenario.
 
 25 Validate link foothead menu and submenu options
 
+
 Requirements for execution of test scripts
+
 1.- Install JDK. 
 
 2.- Install Eclipse IDE or Intellij IDEA.
