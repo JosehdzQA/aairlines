@@ -8,7 +8,7 @@ import pages.CheckInPage;
 
 public class CheckinTests {
         private WebDriver driver;
-
+        String expectedResult = "checkin.. "; ////"put data right"
         CheckInPage checkInPage;
 
         @BeforeTest
@@ -22,7 +22,10 @@ public class CheckinTests {
         @Test
         public void testSearchBook(){
             checkInPage.checkinPageSearch();
-            //requires work on assert succes or failed, the page required permission
+            String actualResult = driver.findElement(By.xpath("/html/body/div/p[3]")).getText();
+            //requires work on assert succes or failed.
+            Assert.assertEquals(actualResult,expectedResult);
+                
         }
 
         @AfterTest
